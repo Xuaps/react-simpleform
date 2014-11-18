@@ -7,18 +7,21 @@ var SimpleMail = React.createClass({displayName: 'SimpleMail',
 	return ({sent: false,succeed: false});
   },
 
-  sendMail: function(){
+  handleClick: function(){
 	var mail = this.refs.email.getDOMNode('#email').value;
 	var name = this.refs.name.getDOMNode('#name').value;
 	var message = this.refs.message.getDOMNode('#message').value;
+	data = {mail: mail, name: name, message: message};
+	this.sendMail(data);
+
+},
+
+
+  sendMail: function(data){
     return jQuery.ajax({
 	  dataType: 'jsonp',
 	  url: "http://getsimpleform.com/messages/ajax?form_api_token=" + this.props.apikey,
-	  data: {
-		mail: mail,
-		name: name,
-		message: message,
-	  }
+	  data: data
 	}).done(function() {
 		this.resetForm();
 		this.setState({sent: true, succeed: true});
@@ -49,7 +52,7 @@ var SimpleMail = React.createClass({displayName: 'SimpleMail',
                             React.DOM.input({placeholder: "name", type: "text", id: "name", ref: "name", className: "ry-input-text"}), 
                             React.DOM.input({placeholder: "email", type: "text", id: "email", ref: "email", className: "ry-input-text"}), 
                             React.DOM.textarea({placeholder: "message", id: "message", ref: "message", className: "ry-input-text"}), 
-                            React.DOM.input({type: "button", value: "Send", className: "ry-btn floated-right", onClick: this.sendMail})
+                            React.DOM.input({type: "button", value: "Send", className: "ry-btn floated-right", onClick: this.handleClick})
                         ), 
 React.DOM.div({id: "mailmessage"}, message)
 )
