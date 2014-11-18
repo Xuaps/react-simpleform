@@ -1,0 +1,33 @@
+{
+  "name": "react-simpleform",
+  "version": "0.1.0",
+  "description": "a simple ajax contact form",
+  "main": "build/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "react": "^0.12.1",
+    "jquery-browserify": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xuaps/react-simpleform"
+  },
+  "keywords": [
+    "contact",
+    "form",
+    "ajax",
+    "mail"
+  ],
+  "author": "Alvaro Verdión <averdion@gmail.com> (http://www.refly.com/)",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/Xuaps/react-simpleform/issues"
+  },
+  "homepage": "https://github.com/Xuaps/react-simpleform"
+}
