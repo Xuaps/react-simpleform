@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.29
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/desarrollo/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/desarrollo/.npm/react-simpleform/0.1.0/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/desarrollo/.npm/react-simpleform/0.1.0/package.tgz
+12 verbose folder .
+13 info prepublish react-simpleform@0.1.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/desarrollo/.npm/1f1177db-tar.lock
+16 silly lockFile 9727cce7-act-simpleform-0-1-0-package-tgz tar:///home/desarrollo/.npm/react-simpleform/0.1.0/package.tgz
+17 verbose lock tar:///home/desarrollo/.npm/react-simpleform/0.1.0/package.tgz /home/desarrollo/.npm/9727cce7-act-simpleform-0-1-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 9727cce7-act-simpleform-0-1-0-package-tgz tar:///home/desarrollo/.npm/react-simpleform/0.1.0/package.tgz
+21 silly lockFile 9727cce7-act-simpleform-0-1-0-package-tgz tar:///home/desarrollo/.npm/react-simpleform/0.1.0/package.tgz
+22 silly lockFile d1dac118-m-react-simpleform-0-1-0-package /home/desarrollo/.npm/react-simpleform/0.1.0/package
+23 verbose lock /home/desarrollo/.npm/react-simpleform/0.1.0/package /home/desarrollo/.npm/d1dac118-m-react-simpleform-0-1-0-package.lock
+24 silly lockFile d1dac118-m-react-simpleform-0-1-0-package /home/desarrollo/.npm/react-simpleform/0.1.0/package
+25 silly lockFile d1dac118-m-react-simpleform-0-1-0-package /home/desarrollo/.npm/react-simpleform/0.1.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'react-simpleform',
+28 silly publish   version: '0.1.0',
+28 silly publish   description: 'a simple ajax contact form',
+28 silly publish   main: 'build/index.js',
+28 silly publish   directories: { test: 'test' },
+28 silly publish   dependencies: { react: '^0.12.1', 'jquery-browserify': '^1.8.1' },
+28 silly publish   devDependencies: {},
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/Xuaps/react-simpleform' },
+28 silly publish   keywords: [ 'contact', 'form', 'ajax', 'mail' ],
+28 silly publish   author:
+28 silly publish    { name: 'Alvaro Verdión',
+28 silly publish      email: 'averdion@gmail.com',
+28 silly publish      url: 'http://www.refly.com/' },
+28 silly publish   license: 'GPLv2',
+28 silly publish   bugs: { url: 'https://github.com/Xuaps/react-simpleform/issues' },
+28 silly publish   homepage: 'https://github.com/Xuaps/react-simpleform',
+28 silly publish   readme: 'Scapegoat\n=========\n\nA simple component to send emails\n\n## Installation\n\n  npm install react-simpleform --save\n\n## Usage\n\n  var SimpleMail = require(\'simplemail\')\n\n## Tests\n\n  npm test\n\n\n## Release History\n\n* 1.0.0 Initial release\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '5ee5969460d0a1804283752371ebd31eaec36ca1',
+28 silly publish   _id: 'react-simpleform@0.1.0',
+28 silly publish   _shasum: 'eb71a4afa65001031656db7dd357433eed7f3b89',
+28 silly publish   _from: '.' }
+29 verbose request where is /react-simpleform
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 31157c918462168f
+32 verbose url raw /react-simpleform
+33 verbose url resolving [ 'https://registry.npmjs.org/', './react-simpleform' ]
+34 verbose url resolved https://registry.npmjs.org/react-simpleform
+35 verbose request where is https://registry.npmjs.org/react-simpleform
+36 info trying registry request attempt 1 at 11:34:22
+37 http PUT https://registry.npmjs.org/react-simpleform
+38 http 403 https://registry.npmjs.org/react-simpleform
+39 verbose headers { date: 'Tue, 18 Nov 2014 10:34:23 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '2997',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-ams4124-AMS',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1416306863.337254,VS0,VE317',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 0.1.0
+41 error old={"name":"react-simpleform","version":"0.1.0","description":"a simple ajax contact form","main":"build/index.js","directories":{"test":"test"},"dependencies":{"react":"^0.12.1","jquery-browserify":"^1.8.1"},"devDependencies":{},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/Xuaps/react-simpleform"},"keywords":["contact","form","ajax","mail"],"author":{"name":"Alvaro Verdión","email":"averdion@gmail.com","url":"http://www.refly.com/"},"license":"GPLv2","bugs":{"url":"https://github.com/Xuaps/react-simpleform/issues"},"homepage":"https://github.com/Xuaps/react-simpleform","gitHead":"5bcfc3de3a83f11fe688e94f3209a6e8a6d148f2","_id":"react-simpleform@0.1.0","_shasum":"2455907662bbbce85aeced97ec05bda71f270457","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"averdion","email":"averdiondeveloping@gmail.com"},"maintainers":[{"name":"averdion","email":"averdiondeveloping@gmail.com"}],"dist":{"shasum":"2455907662bbbce85aeced97ec05bda71f270457","tarball":"http://registry.npmjs.org/react-simpleform/-/react-simpleform-0.1.0.tgz"}}
+41 error new={"name":"react-simpleform","version":"0.1.0","description":"a simple ajax contact form","main":"build/index.js","directories":{"test":"test"},"dependencies":{"react":"^0.12.1","jquery-browserify":"^1.8.1"},"devDependencies":{},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/Xuaps/react-simpleform"},"keywords":["contact","form","ajax","mail"],"author":{"name":"Alvaro Verdión","email":"averdion@gmail.com","url":"http://www.refly.com/"},"license":"GPLv2","bugs":{"url":"https://github.com/Xuaps/react-simpleform/issues"},"homepage":"https://github.com/Xuaps/react-simpleform","readme":"Scapegoat\u000a=========\u000a\u000aA simple component to send emails\u000a\u000a## Installation\u000a\u000a  npm install react-simpleform --save\u000a\u000a## Usage\u000a\u000a  var SimpleMail = require('simplemail')\u000a\u000a## Tests\u000a\u000a  npm test\u000a\u000a\u000a## Release History\u000a\u000a* 1.0.0 Initial release\u000a","readmeFilename":"README.md","gitHead":"5ee5969460d0a1804283752371ebd31eaec36ca1","_id":"react-simpleform@0.1.0","_shasum":"eb71a4afa65001031656db7dd357433eed7f3b89","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"averdion","email":"averdiondeveloping@gmail.com"},"maintainers":[{"name":"averdion","email":"averdiondeveloping@gmail.com"}],"dist":{"shasum":"eb71a4afa65001031656db7dd357433eed7f3b89","tarball":"http://registry.npmjs.org/react-simpleform/-/react-simpleform-0.1.0.tgz"}}: react-simpleform
+41 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:929:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Linux 3.13.0-24-generic
+44 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+45 error cwd /home/desarrollo/desarrollo/projects/react-simpleform
+46 error node -v v0.10.29
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]

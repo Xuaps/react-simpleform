@@ -52,7 +52,7 @@ var SimpleMail = React.createClass({
                             <input placeholder="name" type="text" id="name" ref="name" className="ry-input-text"/>
                             <input placeholder="email" type="text" id="email" ref="email" className="ry-input-text"/>
                             <textarea placeholder="message" id="message" ref="message" className="ry-input-text"></textarea>
-                            <input type="button" value="Send" className="ry-btn floated-right" onClick={this.sendMail} />
+                            <input type="button" value="Send" className="ry-btn floated-right" onClick={this.handleClick} />
                         </form>
 <div id="mailmessage">{message}</div>
 </div>
